@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stanford University CS236: Deep Generative Models</title>
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+  <!-- Google fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<div id="header">
+    <a href="http://stanford.edu/">
+        <img src="img/stanfordlogo.jpg" style="height:50px; float: right; margin-right: 20px;">
+    </a>
+    <h1><a href="https://deepgenerativemodels.github.io/" style="color: black">Deep Generative Models</a></h1>
+    <div class='text-center'>
+        <h4>CS236 - Fall 2021</h4>
+    </div>
+    <hr/>
+</div>
+
+<div class="container sec" style="margin-top: 1em">
+  <h2>Detailed Syllabus</h2>
+  <br>
+  <p>
+    Current quarter's videos are available through <a href="https://stanford-pilot.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=4e1a26c1-26a8-4048-8f28-ada2018896d6">Panopto</a>.<br>
+    Course notes are published <a href="https://deepgenerativemodels.github.io/notes/index.html">here</a>.
+</p>
+</div>
+
+
+<div class="container">
+<table id="schedule" class="table table-bordered no-more-tables table-hover">
+  <thead class="active" style="background-color:#f9f9f9">
+    <th class="text-center">Week</th><th class="text-center">Date</th><th class="text-center">Lecture Topics</th><th class="text-center">Coursework</th><th class="text-center">Sections</th>
+  </thead>
+
+  <tbody>
+  <tr>
+    <td>1</td>
+    <td align="left">Sep 22 & 24</td>
+    <td align="center">
+      Introduction (<a href="assets/slides/cs236_lecture1_2021.pptx">slides</a>)
+      + Background (<a href="assets/slides/cs236_lecture2.pdf">slides</a>)
+    </td>
+    <td align="center">
+      HW 1 released (09/24)
+    </td>
+    <td align="right">Probability and Linear Algebra</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td> Sep 29 & Oct 1 </td>
+    <td align="center">
+      Autoregressive Models <br>
+      (<a href="assets/slides/cs236_lecture3.pdf">Wed. slides</a>, <a href="assets/slides/cs236_lecture4.pdf">Fri. slides</a>)
+    </td>
+    <td align="center"></td>
+    <td align="right">PyTorch</td>
+  </tr>
+  <tr>
+      <td>3</td>
+      <td> Oct 06 & Oct 08</td>
+      <td align="center">
+          VAEs <br>
+          (<a href="assets/slides/cs236_lecture5.pdf">Wed. slides</a>, <a href="assets/slides/cs236_lecture6.pdf">Fri. slides</a>)
+      </td>
+      <td align="center"></td>
+      <td align="right">CNNs, RNNs, Transformers</td>
+    </tr>
+  <tr>
+    <td>4</td>
+    <td> Oct 13 & Oct 15 </td>
+    <td align="center">
+        Normalizing Flows <br>
+        (<a href="assets/slides/cs236_lecture7.pdf">Wed. slides</a>, <a href="assets/slides/cs236_lecture8.pdf">Fri. slides</a>)
+    </td>
+    <td align="center">
+      HW 1 due, HW 2 released
+    </td>
+    <td align="right"></td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td> Oct 20 & Oct 22 </td>
+    <td align="center">
+      GANs <br>
+      (<a href="assets/slides/cs236_lecture9.pdf">Wed. slides</a>, <a href="assets/slides/cs236_lecture10.pdf">Fri. slides</a>)
+    </td>
+    <td align="center">
+    </td>
+    <td align="right"></td>
+  </tr>
+  <tr style="text-align:center; vertical-align:middle;background-color:#FFF2F2">
+      <td align="left"></td>
+      <td align="left"></td>
+      <td colspan="3" style="text-align:center; vertical-align:middle;">
+        Project Proposal: Due Wednesday, October 20, 2021.
+      </td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td> Oct 27	& Oct 29</td>
+    <td align="center">
+      Energy Based Models <br>
+      (<a href="assets/slides/cs236_lecture11.pdf">Wed. slides</a>, <a href="assets/slides/cs236_lecture12.pdf">Fri. slides</a>)
+    </td>
+    <td align="center">
+      HW 2 Due
+    </td>
+    <td align="right"></td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td> Nov 3 & Nov 5</td>
+    <td align="center">
+        Score Based Models <br>
+        (<a href="assets/slides/cs236_lecture13.pdf">Wed. slides</a>, <a href="assets/slides/cs236_lecture14.pdf">Fri. slides</a>)
+    </td>
+    <td align="center">
+    </td>
+  <td align="right"></td>
+</tr>
+<tr style="text-align:center; vertical-align:middle;background-color:#FFF2F2">
+    <td align="left"></td>
+    <td align="left"></td>
+    <td colspan="3" style="text-align:center; vertical-align:middle;">
+      Midterm: <b>Day</b>: Nov. 4 - Nov. 6, 2021 (48 hr period) - <b>Time</b>: Any 3.5 hour period - <b>Location</b>: Online
+    </td>
+</tr>
+<tr>
+    <td>8</td>
+    <td> Nov 10	& Nov 12 </td>
+    <td align="center">
+      Evaluation of Generative Models (<a href="assets/slides/cs236_lecture15.pdf">Slides</a>)<br>
+      Special topic: Combining generative model variants (<a href="assets/slides/cs236_lecture16.pdf">Slides</a>)
+    </td>
+    <td align="center">
+        Project Progress Report due (11/12), HW 3 released
+    </td>
+    <td align="right"></td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td> Nov 17	& Nov 19</td>
+    <td align="center">
+      Applications – GAIL (<a href="assets/slides/cs236_lecture17.pdf">Slides</a>) <br>
+      Special topic: Discreteness in latent variable models (<a href="assets/slides/cs236_lecture18.pdf">Slides</a>)
+    </td>
+    <td align="center">
+    </td>
+    <td align="right"></td>
+
+    <tr>
+        <td>10</td>
+        <td> Nov 24 & Nov 26	</td>
+        <td align="center">
+            Thanksgiving Break
+        </td>
+        <td align="center">
+        </td>
+        <td align="right"></td>
+    </tr>
+    <tr>
+        <td>11</td>
+        <td> Dec 01	</td>
+        <td align="center">
+            Applications - Others (<a href="assets/slides/cs236_lecture19.pdf">Slides</a>)
+        </td>
+        <td align="center">
+          HW 3 Due (Nov. 30th)
+        </td>
+        <td align="right"></td>
+    </tr>
+    <tr style="text-align:center; vertical-align:middle;background-color:#FFF2F2">
+      <td align="left"></td>
+      <td align="left"></td>
+      <td colspan="3" style="text-align:center; vertical-align:middle;">
+        Poster Presentation: <b>Day</b>: December 03, 2021 - <b>Time</b>: Session A: 11am - 1pm, Session B: 1:30pm - 3:30pm - <b>Location</b>: McCaw Hall (Alumni Center)
+      </td>
+  </tr>
+      <tr>
+          <td>12</td>
+          <td> Dec 06  </td>
+          <td align="center">
+              Finals Week
+          </td>
+          <td align="center">
+              <!-- HW 3 due -->
+          </td>
+          <td align="right"></td>
+        </tr>
+            <tr style="text-align:center; vertical-align:middle;background-color:#FFF2F2">
+        <td align="left"></td>
+        <td align="left"></td>
+        <td colspan="3" style="text-align:center; vertical-align:middle;">
+          Final Project Reports: Due Tuesday, December 07, 2021
+        </td>
+    </tr>
+</tbody></table>
+</div>
+
+<hr/>
+<div class="container sec">
+  <h2>Additional Reading: Surveys and Tutorials</h2>
+  <br>
+  <ol>
+      <li><a href="http://yang-song.github.io/blog/2021/score/">Generative Modeling by Estimating Gradients of the Data Distribution</a> Yang Song. Blog post on score-based generative models, May 2021.</li>
+      <li><a href="https://arxiv.org/abs/2101.03288">How to Train Your Energy-Based Models.</a> Yang Song and Diederik P. Kingma. February 2021. </li>
+      <li><a href="https://ermongroup.github.io/generative-models/">Tutorial on Deep Generative Models.</a> Aditya Grover and Stefano Ermon. International Joint Conference on Artificial Intelligence, July 2018.</li>
+      <li><a href="https://sites.google.com/view/cvpr2018tutorialongans/">Tutorial on Generative Adversarial Networks.</a> Computer Vision and Pattern Recognition, June 2018.</li>
+      <li><a href="https://www.youtube.com/watch?v=JrO5fSskISY">Tutorial on Deep Generative Models.</a> Shakir Mohamed and Danilo Rezende. Uncertainty in Artificial Intelligence, July 2017.</li>
+      <li><a href="https://www.youtube.com/watch?v=AJVyzd0rqdc">Tutorial on Generative Adversarial Networks.</a> Ian Goodfellow. Neural Information Processing Systems, December 2016.</li>
+      <li><a href="https://www.cs.cmu.edu/~rsalakhu/papers/annrev.pdf">Learning deep generative models.</a> Ruslan Salakhutdinov. Annual Review of Statistics and Its Application, April 2015.</li>
+    </ol>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+</body></html>

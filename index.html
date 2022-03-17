@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stanford University CS236: Deep Generative Models</title>
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+  <!-- Google fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<div id="header">
+  <a href="http://stanford.edu/">
+    <img src="img/stanfordlogo.jpg" style="height:50px; float: right; margin-right: 20px;">
+  </a>
+  <h1><a href="https://deepgenerativemodels.github.io/" style="color: black">Deep Generative Models</a></h1>
+  <div class='text-center'>
+    <h4>CS236 - Fall 2021</h4>
+  </div>
+  <hr/>
+</div>
+
+<!-- <div class="container sec">
+  <figure>
+    <img src="img/teaser.svg" width="50%">
+    <figcaption style="color: #a2a2a2">These are fake faces <a href="https://thispersondoesnotexist.com/">generated</a> by a GAN.</figcaption>
+  </figure>
+</div>
+<hr/> -->
+<div class="container sec">
+  <h2>Course Description</h2>
+  <div id="coursedesc">
+    Generative models are widely used in many subfields of AI and Machine Learning. Recent advances in parameterizing these models using deep neural networks, combined with progress in stochastic optimization methods, have enabled scalable modeling of complex, high-dimensional data including images, text, and speech. In this course, we will study the probabilistic foundations and learning algorithms for deep generative models, including variational autoencoders, generative adversarial networks, autoregressive models, normalizing flow models, energy-based models, and score-based models. The course will also discuss application areas that have benefitted from deep generative models, including computer vision, speech and natural language processing, graph mining, reinforcement learning, reliable machine learning, and inverse problem solving.
+  </div>
+  <h2>Health and Safety Expectation (COVID-19 protocols)</h2>
+  <div id="covidwarning">
+    Following Stanford’s policies, everyone is required to wear a mask indoors, regardless of vaccination status. This includes any in-person lectures or office hour sessions. Some community members may have preferences that go beyond the requirements; it is important that we treat each others' preferences with respect and care. You can find the most current policies on campus masking requirements on the COVID-19 Health Alerts site.
+  </div>
+  <h2> Lecture Attendance </h2>
+  <div id="attendance">
+    While we do not require in-person lecture attendance, students are encouraged to join the live lecture. To accommodate various circumstances, lecture recordings will also be available on Canvas shortly following the lecture.
+  </div>
+  <h2>Stanford Honor Code</h2>
+  <div id="honorcodedesc">
+    Students are free to form study groups and may discuss homework in groups. However, each student must write down the solutions and code from scratch independently, and without referring to any written notes from the joint session. In other words, each student must understand the solution well enough in order to reconstruct it by him/herself. It is an honor code violation to copy, refer to, or look at written or code solutions from a previous year, including but not limited to: official solutions from a previous year, solutions posted online, and solutions you or someone else may have written up in a previous year. Furthermore, it is an honor code violation to post your assignment solutions online, such as on a public git repo. <br>
+    <br>
+    The Stanford Honor Code can be found <a href="https://communitystandards.stanford.edu/policies-and-guidance/honor-code"> here </a> <br>
+    <br>
+    The Stanford Honor Code pertaining to CS courses can be found <a href="https://web.stanford.edu/class/archive/cs/cs106b/cs106b.1164/handouts/honor-code.pdf"> here </a> <br>
+  </div>
+</div>
+<div style="text-align:center; padding:10px 0px 20px 0px;">
+    <a href="https://deepgenerativemodels.github.io/notes/index.html" style="margin-right:50px">
+      <button type="button" class="btn btn-primary btn-lg">Course Notes</button>
+    </a>
+      <a href="syllabus.html" style="margin-right:50px">
+      <button type="button" class="btn btn-danger btn-lg">Syllabus</button>
+    </a>
+  </a>
+    <a href="https://edstem.org/us/courses/13766/discussion/" style="margin-right:50px">
+      <button type="button" class="btn btn-warning btn-lg">Ed</button>
+    </a>
+    <a href="https://calendar.google.com/calendar/embed?src=tgppkmpdnimblr5qf6iusu6d9c%40group.calendar.google.com&ctz=America%2FLos_Angeles" style="margin-right:50px">
+      <button type="button" class="btn btn-success btn-lg">Office Hours</button>
+    </a>
+    <a href="postersess.html" style="margin-right:50px">
+      <button type="button" class="btn btn-danger btn-lg">Poster Session</button>
+    </a>
+</div>
+<hr/>
+<div class="container sec">
+<div class="row">
+  <div class="col-md-4">
+    <h2>Course Instructors</h2>
+    <br>
+    <div class="instructor">
+      <a href="https://cs.stanford.edu/~ermon/">
+      <div class="instructorphoto"><img src="img/stefano.jpg"></div>
+      <div>Stefano Ermon</div>
+      </a>
+    </div>
+    <div class="instructor">
+      <a href="https://yang-song.github.io">
+      <div class="instructorphoto"><img src="img/yang.jpg"></div>
+      <div>Yang Song</div>
+      </a>
+    </div>
+    <h2>Course Coordinator</h2>
+    <br>
+    <div class="instructor">
+        <a href="https://www.linkedin.com/in/aebyun/">
+      <div class="instructorphoto"><img src="img/amelie.jpg"></div>
+      <div>Amelie Byun</div>
+      </a>
+    </div>
+  </div>
+  <div class="col-md-8">
+    <h2 style="text-align: left;">Course Assistants</h2>
+    <br>
+    <div class="instructor">
+      <a href="http://ruishu.io/">
+      <div class="instructorphoto"><img src="img/rui.png"></div>
+      <div>Head TA - Rui Shu</div></a>
+    </div>
+
+    <div class="instructor">
+        <a href="https://www.linkedin.com/in/vamsisaladi99/">
+      <div class="instructorphoto"><img src="img/vamsi.png"></div>
+      <div>Vamsi Saladi</div>
+    </a>
+    </div>
+
+    <div class="instructor">
+        <a href="http://web.stanford.edu/~kellyyhe/">
+      <div class="instructorphoto"><img src="img/Kelly_He-TA.jpg"></div>
+      <div>Kelly He</div>
+    </a>
+    </div>
+
+    <div class="instructor">
+        <a href="https://www.linkedin.com/in/tareshsethi/">
+      <div class="instructorphoto"><img src="img/taresh.png"></div>
+      <div>Taresh Sethi</div>
+    </a>
+    </div>
+
+    <div class="instructor">
+        <a href="https://mvpatel2000.github.io/">
+      <div class="instructorphoto"><img src="img/mihir.PNG"></div>
+      <div>Mihir Patel</div>
+    </a>
+    </div>
+
+    <div class="instructor">
+        <a href="https://www.linkedin.com/in/jacklyonlee/">
+      <div class="instructorphoto"><img src="img/jacklee.jpeg"></div>
+      <div>Jack Lee</div>
+    </a>
+    </div>
+
+    <div class="instructor">
+        <a href="https://www.linkedin.com/in/akash-velu/">
+      <div class="instructorphoto"><img src="img/akashvelu.jpeg"></div>
+      <div>Akash Velu</div>
+      </a>
+    </div>
+  </div>
+</div>
+</div>
+
+<hr/>
+
+<div class="container sec">
+  <div class="row">
+    <div class="col-md-4">
+      <h2>Time & Location</h2>
+      <span class="spanh">Fall Quarter</span>: Sept. - Dec., 2021<br>
+      <span class="spanh">Lecture</span>: Wednesday, Friday 11:30 AM - 1:00 PM<br>
+      <span class="spanh">Location</span>: <a href="https://campus-map.stanford.edu/?srch=Hewlett%20Teaching%20Center">Hewlett Teaching Center</a> - Room 200
+    </div>
+    <div class="col-md-4">
+        <h2>Office Hours</h2>
+        You can find an up-to-date list of times and locations <a href="https://calendar.google.com/calendar/embed?src=tgppkmpdnimblr5qf6iusu6d9c%40group.calendar.google.com&ctz=America%2FLos_Angeles">here</a>.
+    </div>
+    <div class="col-md-4">
+      <h2>Grade Breakdown</h2>
+        <ul>
+          <li><span class="spanh">Three Homeworks:</span> 15% each</li>
+          <li><span class="spanh">Midterm:</span> 15%</li>
+          <li><span class="spanh">Course Project:</span> 40%</li>
+            <ul>
+              <li><span class="spanh">Proposal:</span> 5%</li>
+              <li><span class="spanh">Progress Report:</span> 10%</li>
+              <li><span class="spanh">Poster Presentation:</span> 10%</li>
+              <li><span class="spanh">Final Report:</span> 15%</li>
+            </ul>
+        </ul>
+    </div>
+  </div>
+</div>
+
+<div class="container sec">
+    <div class="row">
+      <div class="col-md-4">
+        <h2>Course Discussions</h2>
+        We use <a href="https://edstem.org/us/courses/13766/discussion/">Ed</a> for course communication.
+        <br>
+      </div>
+      <div class="col-md-4">
+        <h2>Assignment Details</h2>
+        See <a href="assignments.html">here</a> for more details concerning assignments.
+      </div>
+      <div class="col-md-4">
+        <h2>Course Project Details</h2>
+        See <a href="project.html">here</a> for more details concerning the course project.
+      </div>
+    </div>
+  </div>
+  <hr/>
+<div class="container sec">
+  <h2>FAQ</h2>
+  <div class="qqa">
+    <div class="qq">What are the pre-requisites?</div>
+      <ul>
+        <li><div class "qa">Basic knowledge about machine learning from at least one of: CS 221, 228, 229 or 230.</div></li>
+        <li><div class "qa">Basic knowledge of probabilities and calculus: students will work with computational and mathematical models.</div></li>
+        <li><div class "qa">Proficiency in a programming language: preferably Python.</div></li>
+      </ul>
+  </div>
+  <div class="qqa">
+    <div class="qq">Can I audit or sit in?</div>
+    <div class="qa">In general we are very open to sitting-in guests if you are a member of the Stanford community (registered student, staff, and/or faculty). Out of courtesy, we would appreciate that you first email us or talk to the instructor after the first class you attend. If the class is too full and we're running out of space, we would ask that you please allow registered students to attend.</div>
+  </div>
+  <div class="qqa">
+    <div class="qq">Is there a textbook for this course?</div>
+    <div class="qa">We offer our own self-contained <a href="https://deepgenerativemodels.github.io/notes/index.html">notes</a> for this course. While there is no required textbook, we recommend "Deep Learning" by Ian Goodfellow, Yoshua Bengio, Aaron Courville. The online version available for free <a href="https://www.deeplearningbook.org/">here</a>.</div>
+  </div>
+</div>
+<div class="container sec">
+  <h2>Academic Accomodations</h2>
+  <div id="accomdationdesc">
+    If you need an academic accommodation based on a disability, please register with the Office of Accessible Education (OAE). Professional staff will evaluate your needs, support appropriate and reasonable accommodations, and prepare an Academic Accommodation Letter for faculty. To get started, or to re-initiate services, please visit oae.stanford.edu.<br>
+    <br>
+    If you already have an Academic Accommodation Letter, please make a private Ed post.  OAE Letters should be sent to us at the earliest possible opportunity so that the course staff can partner with you and OAE to make the appropriate accommodations.
+  </div>
+</div>
+
+<hr/>
+<div class="container sec">
+  <strong>Acknowledgments.</strong> HTML taken from various CS courses given at Stanford: <a href="http://cs231n.stanford.edu/">cs231n</a>, <a href="http://web.stanford.edu/class/cs231a/">cs231a</a>, and <a href="http://cs229.stanford.edu/">cs229</a>.
+</div>
+
+<!-- jQuery and Boostrap -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
