@@ -2,30 +2,30 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Stanford University CS281: Ethics of Artificial Intelligence</title>
+    <title>Stanford University CS281: Ethics of Artificial Intelligence</title>
 
-  <!-- bootstrap -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 
-  <!-- Google fonts -->
-  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+    <!-- Google fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
 
-  <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 
 <div id="header">
-  <a href="http://stanford.edu/">
-    <img src="img/stanfordlogo.jpg" style="height:50px; float: right; margin-right: 20px;">
-  </a>
-  <h1><a href="https://stanfordaiethics.github.io/" style="color: black">Ethics of Artificial Intelligence</a></h1>
-  <div class='text-center'>
-    <h4>CS281 - Spring 2022</h4>
-  </div>
-  <hr/>
+    <a href="http://stanford.edu/">
+        <img src="img/stanfordlogo.jpg" style="height:50px; float: right; margin-right: 20px;">
+    </a>
+    <h1><a href="https://stanfordaiethics.github.io/" style="color: black">Ethics of Artificial Intelligence</a></h1>
+    <div class='text-center'>
+        <h4>CS281 - Spring 2022</h4>
+    </div>
+    <hr/>
 </div>
 
 <!-- <div class="container sec">
@@ -37,166 +37,220 @@
 <hr/> -->
 <div style="text-align:center; padding:10px 0px 20px 0px;">
     <a href="syllabus.html" style="margin-right:40px">
-      <button type="button" class="btn btn-primary btn-lg">Syllabus</button>
+        <button type="button" class="btn btn-primary btn-lg">Syllabus</button>
     </a>
-    <a href="https://docs.google.com/document/d/1j2IxWxflizl7gypQwxvEBBBvA8fmNn_rRjI4zbC8qyI/edit#" style="margin-right:40px">
-      <button type="button" class="btn btn-primary btn-lg">Readings</button>
+    <a href="https://docs.google.com/document/d/1j2IxWxflizl7gypQwxvEBBBvA8fmNn_rRjI4zbC8qyI/edit#"
+       style="margin-right:40px">
+        <button type="button" class="btn btn-primary btn-lg">Readings</button>
     </a>
     <a href="assignments.html" style="margin-right:40px">
-      <button type="button" class="btn btn-primary btn-lg">Assignments</button>
+        <button type="button" class="btn btn-primary btn-lg">Assignments</button>
     </a>
-    <a href="https://docs.google.com/document/d/1rKJKvMDRL6JRReL55BvmWaxKfM9QigZjoDNqc6uYYBQ/edit#" style="margin-right:40px">
-      <button type="button" class="btn btn-primary btn-lg">Project</button>
+    <a href="https://docs.google.com/document/d/1rKJKvMDRL6JRReL55BvmWaxKfM9QigZjoDNqc6uYYBQ/edit#"
+       style="margin-right:40px">
+        <button type="button" class="btn btn-primary btn-lg">Project</button>
     </a>
     <a href="https://edstem.org/us/courses/21103/discussion/" style="margin-right:40px">
-      <button type="button" class="btn btn-primary btn-lg">Ed</button>
+        <button type="button" class="btn btn-primary btn-lg">Ed</button>
     </a>
-    <a href="https://calendar.google.com/calendar/embed?src=jtglnskm8civlsg4s8ipo124p4%40group.calendar.google.com&ctz=America%2FLos_Angeles" style="margin-right:40px">
-      <button type="button" class="btn btn-primary btn-lg">Office Hours</button>
+    <a href="https://calendar.google.com/calendar/embed?src=jtglnskm8civlsg4s8ipo124p4%40group.calendar.google.com&ctz=America%2FLos_Angeles"
+       style="margin-right:40px">
+        <button type="button" class="btn btn-primary btn-lg">Office Hours</button>
     </a>
 </div>
 
 <div class="container sec">
-  <h2>Course Description</h2>
-  <div id="coursedesc">
-    Machine learning has become an indispensable tool for creating intelligent applications, accelerating scientific discoveries, and making better data-driven decisions. Yet, the automation and scaling of such tasks can have troubling negative societal impacts. Through practical case studies, you will identify issues of fairness, justice and truth in AI applications. You will then apply recent techniques to detect and mitigate such algorithmic biases, along with methods to provide more transparency and explainability to state-of-the-art ML models. Finally, you will derive fundamental formal results on the limits of such techniques, along with tradeoffs that must be made for their practical application.
-  </div>
-  <h2>Health and Safety Expectation (COVID-19 protocols)</h2>
-  <div id="covidwarning">
-    Following Stanford’s policies, everyone is required to wear a mask indoors, regardless of vaccination status. This includes any in-person lectures or office hour sessions. Individuals may remove face coverings while speaking. Some community members may have preferences that go beyond the requirements; it is important that we treat each others' preferences with respect and care. You can find the most current policies on campus masking requirements on the COVID-19 <a href="https://healthalerts.stanford.edu/covid-19/">Health Alerts site.</a>
-  </div>
-  <h2> Lecture Attendance </h2>
-  <div id="attendance">
-    We require in-person lecture attendance. Class participation and in-class discussions will count for the final grade.
-  </div>
-  <h2>Stanford Honor Code</h2>
-  <div id="honorcodedesc">
-    Students are free to form study groups and may discuss homework in groups. However, each student must write down the solutions and code from scratch independently, and without referring to any written notes from the joint session. In other words, each student must understand the solution well enough in order to reconstruct it by him/herself. It is an honor code violation to copy, refer to, or look at written or code solutions from a previous year, including but not limited to: official solutions from a previous year, solutions posted online, and solutions you or someone else may have written up in a previous year. Furthermore, it is an honor code violation to post your assignment solutions online, such as on a public git repo. The Stanford Honor Code can be found <a href="https://communitystandards.stanford.edu/policies-and-guidance/honor-code">here</a>. The Stanford Honor Code pertaining to CS courses can be found <a href="https://web.stanford.edu/class/archive/cs/cs106b/cs106b.1164/handouts/honor-code.pdf">here</a>. <br>
-  </div>
+    <h2>Course Description</h2>
+    <div id="coursedesc">
+        Machine learning has become an indispensable tool for creating intelligent applications, accelerating scientific
+        discoveries, and making better data-driven decisions. Yet, the automation and scaling of such tasks can have
+        troubling negative societal impacts. Through practical case studies, you will identify issues of fairness,
+        justice and truth in AI applications. You will then apply recent techniques to detect and mitigate such
+        algorithmic biases, along with methods to provide more transparency and explainability to state-of-the-art ML
+        models. Finally, you will derive fundamental formal results on the limits of such techniques, along with
+        tradeoffs that must be made for their practical application.
+    </div>
+    <h2>Health and Safety Expectation (COVID-19 protocols)</h2>
+    <div id="covidwarning">
+        Following Stanford’s policies, everyone is required to wear a mask indoors, regardless of vaccination status.
+        This includes any in-person lectures or office hour sessions. Individuals may remove face coverings while
+        speaking. Some community members may have preferences that go beyond the requirements; it is important that we
+        treat each others' preferences with respect and care. You can find the most current policies on campus masking
+        requirements on the COVID-19 <a href="https://healthalerts.stanford.edu/covid-19/">Health Alerts site.</a>
+    </div>
+    <h2> Lecture Attendance </h2>
+    <div id="attendance">
+        We require in-person lecture attendance. Class participation and in-class discussions will count for the final
+        grade.
+    </div>
+    <h2>Stanford Honor Code</h2>
+    <div id="honorcodedesc">
+        Students are free to form study groups and may discuss homework in groups. However, each student must write down
+        the solutions and code from scratch independently, and without referring to any written notes from the joint
+        session. In other words, each student must understand the solution well enough in order to reconstruct it by
+        him/herself. It is an honor code violation to copy, refer to, or look at written or code solutions from a
+        previous year, including but not limited to: official solutions from a previous year, solutions posted online,
+        and solutions you or someone else may have written up in a previous year. Furthermore, it is an honor code
+        violation to post your assignment solutions online, such as on a public git repo. The Stanford Honor Code can be
+        found <a href="https://communitystandards.stanford.edu/policies-and-guidance/honor-code">here</a>. The Stanford
+        Honor Code pertaining to CS courses can be found <a
+            href="https://web.stanford.edu/class/archive/cs/cs106b/cs106b.1164/handouts/honor-code.pdf">here</a>. <br>
+    </div>
 </div>
 
 <hr/>
 <div class="container sec">
-<div class="row">
-  <div class="col-md-4">
-    <h2>Course Instructor</h2>
-    <br>
-    <div class="instructor">
-      <a href="https://guestrin.su.domains/">
-      <div class="instructorphoto"><img src="img/guestrin.jpg"></div>
-      <div>Carlos Guestrin</div>
-      </a>
-    </div>
-  </div>
-  <div class="col-md-8">
-    <h2 style="text-align: left;">Course Assistants</h2>
-    <br>
-    <div class="instructor">
-      <a href="https://scholar.google.com/citations?user=xhMkQfwAAAAJ&hl=en">
-      <div class="instructorphoto"><img src="img/kuno.jpg"></div>
-      <div>Kuno Kim</div></a>
-    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Course Instructor</h2>
+            <br>
+            <div class="instructor">
+                <a href="https://guestrin.su.domains/">
+                    <div class="instructorphoto"><img src="img/guestrin.jpg"></div>
+                    <div>Carlos Guestrin</div>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <h2 style="text-align: left;">Course Assistants</h2>
+            <br>
+            <div class="instructor">
+                <a href="https://scholar.google.com/citations?user=xhMkQfwAAAAJ&hl=en">
+                    <div class="instructorphoto"><img src="img/kuno.jpg"></div>
+                    <div>Kuno Kim</div>
+                </a>
+            </div>
 
-    <div class="instructor">
-        <a href="https://www.lxuechen.com/">
-      <div class="instructorphoto"><img src="img/lxuechen.jpg"></div>
-      <div>Xuechen Li</div>
-    </a>
+            <div class="instructor">
+                <a href="https://www.lxuechen.com/">
+                    <div class="instructorphoto"><img src="img/lxuechen.jpg"></div>
+                    <div>Xuechen Li</div>
+                </a>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
 </div>
 
 <hr/>
 
 <div class="container sec">
-  <div class="row">
-    <div class="col-md-4">
-      <h2>Time & Location</h2>
-      <span class="spanh">Spring Quarter</span>: Mar. - Jun., 2022<br>
-      <span class="spanh">Lecture</span>: Tuesday, Thursday 09:45 AM - 11:15 AM<br>
-      <span class="spanh">Location</span>: <a href="https://bit.ly/3JoGisl">Gates Building</a><br>
-      - Lectures: Room B12 <br>
-      - Tech-Analysis: Fujitsu Conf. Room (4th floor)<br>
-    </div>
-    <div class="col-md-4">
-        <h2>Office Hours</h2>
-        You can find an up-to-date list of times and locations <a href="https://calendar.google.com/calendar/embed?src=jtglnskm8civlsg4s8ipo124p4%40group.calendar.google.com&ctz=America%2FLos_Angeles">here</a>.
-    </div>
-    <div class="col-md-4">
-      <h2>Grade Breakdown</h2>
-        <ul>
-          <li><span class="spanh">Three Homeworks:</span> 8% each, total 24%</li>
-          <li><span class="spanh">Three In-class Socio-Tech Analysis:</span> 8% each, total 24%</li>
-          <li><span class="spanh">Participation:</span> 8%</li>
-          <li><span class="spanh">Course Project:</span> 42%</li>
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Time & Location</h2>
+            <span class="spanh">Spring Quarter</span>: Mar. - Jun., 2022<br>
+            <span class="spanh">Lecture</span>: Tuesday, Thursday 09:45 AM - 11:15 AM<br>
+            <span class="spanh">Location</span>: <a href="https://bit.ly/3JoGisl">Gates Building</a>
+            <br>
             <ul>
-              <li><span class="spanh">Proposal:</span> 10%</li>
-              <li><span class="spanh">Progress Report:</span> 20%</li>
-              <li><span class="spanh">Poster Presentation:</span> 20%</li>
-              <li><span class="spanh">Final Report:</span> 50%</li>
+              <li><span class="spanh">Lectures</span>: Room B12</li>
+              <li><span class="spanh">Tech-Analysis</span>: Fujitsu Conf. Room (4th floor)</li>
             </ul>
-        </ul>
+        </div>
+        <div class="col-md-4">
+            <h2>Office Hours & Contact</h2>
+            <span class="spanh">Office hours</span>:
+            You can find an up-to-date list of times and locations <a
+                href="https://calendar.google.com/calendar/embed?src=jtglnskm8civlsg4s8ipo124p4%40group.calendar.google.com&ctz=America%2FLos_Angeles">here</a>.
+            <br>
+            <span class="spanh">Contact</span>:
+            Course staff can be reached through Ed or email at the address 'cs281-spr2122-staff <a
+                href="https://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2010/3/23/1269337548751/at23mar2010.jpg">appropriate
+            symbol</a> lists.stanford.edu'.
+        </div>
+        <div class="col-md-4">
+            <h2>Grade Breakdown</h2>
+            <ul>
+                <li><span class="spanh">Three Homeworks:</span> 8% each, total 24%</li>
+                <li><span class="spanh">Three In-class Socio-Tech Analysis:</span> 8% each, total 24%</li>
+                <li><span class="spanh">Participation:</span> 8%</li>
+                <li><span class="spanh">Course Project:</span> 42%</li>
+                <ul>
+                    <li><span class="spanh">Proposal:</span> 10%</li>
+                    <li><span class="spanh">Progress Report:</span> 20%</li>
+                    <li><span class="spanh">Poster Presentation:</span> 20%</li>
+                    <li><span class="spanh">Final Report:</span> 50%</li>
+                </ul>
+            </ul>
+        </div>
     </div>
-  </div>
 </div>
 
 <div class="container sec">
     <div class="row">
-      <div class="col-md-4">
-        <h2>Course Discussions</h2>
-        We use <a href="https://edstem.org/us/courses/13766/discussion/">Ed</a> for course communication.
-        <br>
-      </div>
-      <div class="col-md-4">
-        <h2>Assignment Details</h2>
-        See <a href="assignments.html">here</a> for more details concerning assignments.
-      </div>
-      <div class="col-md-4">
-        <h2>Course Project Details</h2>
-        See <a href="https://docs.google.com/document/d/1rKJKvMDRL6JRReL55BvmWaxKfM9QigZjoDNqc6uYYBQ/edit#">here</a> for more details concerning the course project.
-      </div>
+        <div class="col-md-4">
+            <h2>Course Discussions</h2>
+            We use <a href="https://edstem.org/us/courses/13766/discussion/">Ed</a> for course communication.
+            <br>
+        </div>
+        <div class="col-md-4">
+            <h2>Assignment Details</h2>
+            See <a href="assignments.html">here</a> for more details concerning assignments.
+        </div>
+        <div class="col-md-4">
+            <h2>Course Project Details</h2>
+            See <a href="https://docs.google.com/document/d/1rKJKvMDRL6JRReL55BvmWaxKfM9QigZjoDNqc6uYYBQ/edit#">here</a>
+            for more details concerning the course project.
+        </div>
     </div>
-  </div>
-  <hr/>
+</div>
+<hr/>
 <div class="container sec">
-  <h2>FAQ</h2>
-  <div class="qqa">
-    <div class="qq">What are the pre-requisites?</div>
-      <ul>
-        <li><div class "qa">Basic knowledge about machine learning
-    from at least one of, or equivalent: CS 221, 228, 229 or 230.</div></li>
-        <li><div class "qa">Proficiency in a programming language: preferably Python.</div></li>
-      </ul>
-  </div>
-  <div class="qqa">
+    <h2>FAQ</h2>
+    <div class="qqa">
+        <div class="qq">What are the pre-requisites?</div>
+        <ul>
+            <li>
+                <div class
+                "qa">Basic knowledge about machine learning
+                from at least one of, or equivalent: CS 221, 228, 229 or 230.
+    </div>
+    </li>
+    <li>
+        <div class
+        "qa">Proficiency in a programming language: preferably Python.
+</div>
+</li>
+</ul>
+</div>
+<div class="qqa">
     <div class="qq">Can I audit or sit in?</div>
     <div class="qa">A significant component of this course is in-class
-    participation and activities. In general, we are very open to sitting-in guests
-    if you are a member of the Stanford community (registered student,
-    staff, and/or faculty), but the primary participants will be
-    registered students. Out of courtesy, we would appreciate that you
-    first email us or talk to the instructor after the first class you
-      attend. If the class is too full and we're running out of
-      space, we would ask that you please allow registered students to attend.</div>
-  </div>
-  <div class="qqa">
+        participation and activities. In general, we are very open to sitting-in guests
+        if you are a member of the Stanford community (registered student,
+        staff, and/or faculty), but the primary participants will be
+        registered students. Out of courtesy, we would appreciate that you
+        first email us or talk to the instructor after the first class you
+        attend. If the class is too full and we're running out of
+        space, we would ask that you please allow registered students to attend.
+    </div>
+</div>
+<div class="qqa">
     <div class="qq">Is there a textbook for this course?</div>
-    <div class="qa">While there is no required textbook, we offer a recommended reading list along <a href="https://docs.google.com/document/d/1l_kPa4vSzg-In32sQFt13Yl9u75rOCFWIgWCjkcwqA8/edit?usp=sharing">here</a> for this course.</div>
-  </div>
+    <div class="qa">While there is no required textbook, we offer a recommended reading list along <a
+            href="https://docs.google.com/document/d/1l_kPa4vSzg-In32sQFt13Yl9u75rOCFWIgWCjkcwqA8/edit?usp=sharing">here</a>
+        for this course.
+    </div>
+</div>
 </div>
 <div class="container sec">
-  <h2>Academic Accomodations</h2>
-  <div id="accomdationdesc">
-    If you need an academic accommodation based on a disability, please register with the Office of Accessible Education (OAE). Professional staff will evaluate your needs, support appropriate and reasonable accommodations, and prepare an Academic Accommodation Letter for faculty. To get started, or to re-initiate services, please visit oae.stanford.edu.<br>
-    <br>
-    If you already have an Academic Accommodation Letter, please make a private Ed post.  OAE Letters should be sent to us at the earliest possible opportunity so that the course staff can partner with you and OAE to make the appropriate accommodations.
-  </div>
+    <h2>Academic Accomodations</h2>
+    <div id="accomdationdesc">
+        If you need an academic accommodation based on a disability, please register with the Office of Accessible
+        Education (OAE). Professional staff will evaluate your needs, support appropriate and reasonable accommodations,
+        and prepare an Academic Accommodation Letter for faculty. To get started, or to re-initiate services, please
+        visit oae.stanford.edu.<br>
+        <br>
+        If you already have an Academic Accommodation Letter, please make a private Ed post. OAE Letters should be sent
+        to us at the earliest possible opportunity so that the course staff can partner with you and OAE to make the
+        appropriate accommodations.
+    </div>
 </div>
 
 <hr/>
 <div class="container sec">
-  <strong>Acknowledgments.</strong> HTML taken from various CS courses given at Stanford: <a href="http://cs231n.stanford.edu/">cs231n</a>, <a href="http://web.stanford.edu/class/cs231a/">cs231a</a>, and <a href="http://cs229.stanford.edu/">cs229</a>.
+    <strong>Acknowledgments.</strong> HTML taken from various CS courses given at Stanford: <a
+        href="http://cs231n.stanford.edu/">cs231n</a>, <a href="http://web.stanford.edu/class/cs231a/">cs231a</a>, and
+    <a href="http://cs229.stanford.edu/">cs229</a>.
 </div>
 
 <!-- jQuery and Boostrap -->
