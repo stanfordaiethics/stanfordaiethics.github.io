@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stanford University CS281: Ethics of Artificial Intelligence</title>
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+  <!-- Google fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<div id="header">
+    <a href="http://stanford.edu/">
+        <img src="img/stanfordlogo.jpg" style="height:50px; float: right; margin-right: 20px;">
+    </a>
+    <h1><a href="https://stanfordaiethics.github.io/" style="color: black">Ethics of Artificial Intelligence</a></h1>
+    <div class='text-center'>
+        <h4>CS281 - Spring 2022</h4>
+    </div>
+    <hr/>
+</div>
+
+<div class="container sec" style="margin-top: 1em">
+    <style scoped>
+      tr:nth-child(even) {background: #CCC}
+      tr:nth-child(odd) {background: #FFF}
+    </style>
+  <h2>Poster Session</h2>
+  <br>
+  <p> Information will be updated soon!
+  </p>
+  <!-- Quick Links -->
+  <!-- <ul>
+    <li><a href="#toc1">Morning Session</a></li>
+    <li><a href="#toc2">Afternoon Session</a></li>
+  </ul> -->
+
+  <!-- <figure>
+    <img src="img/map.png" width="40%">
+    <figcaption style="color: #a2a2a2">Map of McCaw Hall @ Arrillaga Alumni Center</figcaption>
+  </figure>
+
+  <br>
+
+  <h3>We thank the <a href="https://forum.stanford.edu/">Computer Forum</a> for sponsoring this poster session.</h3>
+  <br> -->
+
+  <!-- Morning Session -->
+  <!-- <p><a name="toc1"></a></p>
+  <h3>Morning Session</h3>
+  <br> -->
+  <!-- <div class="container"> -->
+    <!-- <table id="schedule" class="table table-bordered no-more-tables">
+        <thead class="active" style="background-color:#f9f9f9">
+            <tr>
+              <th>Names</th>
+              <th>Position</th>
+              <th>Title</th>
+            </tr>
+        </thead>
+          <tbody>
+            <tr>
+              <td>Rayan Kanfar, Rustam Akhmadeiv</td>
+              <td>A1</td>
+              <td>Subsurface Imaging Using GANs</td>
+            </tr>
+            <tr>
+              <td>Leon Lin</td>
+              <td>A2</td>
+              <td>Generative Models for Medical Image Temporal Interpolation</td>
+            </tr>
+            <tr>
+              <td>Andrew Deng, Kais Kudrolli, Alex Tsun</td>
+              <td>A3</td>
+              <td>Poprockify - Music Style Transfer</td>
+            </tr>
+            <tr>
+              <td>Tanay Topac</td>
+              <td>A4</td>
+              <td>Anomaly Detection of a Sensor-network Equipped UAV Wing using Generative Adversarial Networks</td>
+            </tr>
+            <tr>
+              <td>Sanjana Srivastava, Kaylee Burns</td>
+              <td>A5</td>
+              <td>Extending the Lottery Ticket Hypothesis to Generative Models</td>
+            </tr>
+            <tr>
+              <td>Bowen Jing, Ethan Chi, Jillian Tang</td>
+              <td>A6</td>
+              <td>SGVAE: Sequential Graph Variational Autoencoders</td>
+            </tr>
+            <tr>
+              <td>Shai Limonchik, Conner Smith, Jose Cuerto</td>
+              <td>A7</td>
+              <td>Generating Chest X-ray images for Different Age Groups</td>
+            </tr>
+            <tr>
+              <td>Zainab Khan, Jonas Messner</td>
+              <td>A8</td>
+              <td>Super-Resolution of Low-Resolution Images using Generative Adversarial Networks</td>
+            </tr>
+            <tr>
+              <td>Alvaro Zamora, Aidan O'Beirne</td>
+              <td>A9</td>
+              <td>ImagiNet: Imagining Better Prognoses with Coupled VAEs.</td>
+            </tr>
+            <tr>
+              <td>Jeff Park</td>
+              <td>A10</td>
+              <td>Generative Models for Spaceborne Images</td>
+            </tr>
+            <tr>
+              <td>Daniel Semeniuta</td>
+              <td>B1</td>
+              <td>Data Augmentation with GANs for Image Classification</td>
+            </tr>
+            <tr>
+              <td>Teja Veeramacheneni, Ayush Agarwal</td>
+              <td>B2</td>
+              <td>Generalizing Pose Estimation Performance Through Synthetic 3D Pose Sequences</td>
+            </tr>
+            <tr>
+              <td>Nicole Ticea</td>
+              <td>B3</td>
+              <td>Inferring Functional Connectivity of Biological Neural Networks</td>
+            </tr>
+            <tr>
+              <td>Jennie Chen, Wenli Looi</td>
+              <td>B4</td>
+              <td>Caption-to-Image Conditional Generative Modeling</td>
+            </tr>
+            <tr>
+              <td>Annie Xie</td>
+              <td>B5</td>
+              <td>Learning Predictive Models by Observation and Interaction</td>
+            </tr>
+            <tr>
+              <td>Ross Weber</td>
+              <td>B6</td>
+              <td>Reconstructing 3D Battery Electrodes from 2D Images</td>
+            </tr>
+            <tr>
+              <td>Nishant Rai</td>
+              <td>B7</td>
+              <td>Super-Resolution of images using keypoint modelling</td>
+            </tr>
+            <tr>
+              <td>Luke Sturm, David Liang, Jonathan Mak</td>
+              <td>B8</td>
+              <td>Data Augmentation Techniques and Style Shifting Progress Report</td>
+            </tr>
+            <tr>
+              <td>Katie Fo, Tannar Williams</td>
+              <td>B9</td>
+              <td>Audio Super-Resolution for Total Laryngectomy Patients</td>
+            </tr>
+            <tr>
+              <td>Noah Arthurs</td>
+              <td>B10</td>
+              <td>Generative Models for Understanding Student Behavior During College Admissions</td>
+            </tr>
+            <tr>
+              <td>Pankaj Rajak, Siamak Shakeri, Lingjie Kong</td>
+              <td>C1</td>
+              <td>Generative models to form 3D point clouds</td>
+            </tr>
+            <tr>
+              <td>Michael Cai, Avoy Datta, Daniel Wu</td>
+              <td>C2</td>
+              <td>DeepTremor: Californian Earthquake Projection with Deep Generative Spatiotemporal RNNs</td>
+            </tr>
+            <tr>
+              <td>Sheng Li, Arec Jamgochian</td>
+              <td>C3</td>
+              <td>Bayesian Deep Learning for Capturing Uncertainties in Driver Behavior Prediction</td>
+            </tr>
+            <tr>
+              <td>Evin Yang, Daylen Yang</td>
+              <td>C4</td>
+              <td>Conversational Agents with GPT-2</td>
+            </tr>
+            <tr>
+              <td>Logan Spear, Daniel Salz</td>
+              <td>C5</td>
+              <td>Time series forecasting and scenario generation with WaveGlow</td>
+            </tr>
+            <tr>
+              <td>Chris Waites</td>
+              <td>C6</td>
+              <td>The Efficacy of Flow-Based Generative Models for Improved Biometric Verification Systems</td>
+            </tr>
+            <tr>
+              <td>Miles Hutson</td>
+              <td>C7</td>
+              <td>A Curious World</td>
+            </tr>
+            <tr>
+              <td>Yipeng He, Emma Chen</td>
+              <td>C8</td>
+              <td>Exploring image outpainting with GAN</td>
+            </tr>
+            <tr>
+              <td>Sahil Yakhmi</td>
+              <td>C9</td>
+              <td>Conditional Flow++</td>
+            </tr>
+            <tr>
+              <td>Nadim Saad, Alexandre Matton</td>
+              <td>C10</td>
+              <td>Transformers for image generation</td>
+            </tr>
+            <tr>
+              <td>Aviv Elbag</td>
+              <td>D1</td>
+              <td>Towards Selective Perception Agents</td>
+            </tr>
+            <tr>
+              <td>Shubh Gupta, Dan Johnson, Nhi Truong</td>
+              <td>D2</td>
+              <td>Generative Approaches to Object-Aware Trajectory Generation</td>
+            </tr>
+            <tr>
+              <td>Dang Ton</td>
+              <td>D3</td>
+              <td>Progressive Growing of GANs</td>
+            </tr>
+            <tr>
+              <td>Cindy Jiang, Andrew Guan, Lucas Lin</td>
+              <td>D4</td>
+              <td>Remastering GANimations</td>
+            </tr>
+            <tr>
+              <td>Jeffrey Barratt, Chuanbo Pan, Daniel Do</td>
+              <td>D5</td>
+              <td>Voice Conversion Using Generative Methods</td>
+            </tr>
+            <tr>
+              <td>Nolan Handali, Kush Khosla, Aleksander Dash</td>
+              <td>D6</td>
+              <td>Deep Conditional GANS for Image Generation</td>
+            </tr>
+            <tr>
+              <td>Vincent Liu</td>
+              <td>D7</td>
+              <td>Fast High-Fidelity Conditional Image Generation</td>
+            </tr>
+            <tr>
+              <td>Richard Diehl Martinez, John Kamalu</td>
+              <td>D8</td>
+              <td>Adversarial regularization of BERT attention layers for machine translation</td>
+            </tr>
+            <tr>
+              <td>JK Hunt, Emma Spellman, Katie Lamb</td>
+              <td>D9</td>
+              <td>Data Augmentation with GANs to Improve Cloud Classification</td>
+            </tr>
+            <tr>
+              <td>Jerry Meng, Kaan Donbekci, Vadim Yakubenko</td>
+              <td>D10</td>
+              <td>FashionFlow: Normalizing Flow Models for Fashion Generation</td>
+            </tr>
+            <tr>
+              <td>Prathik Naidu, Mihir Garimella</td>
+              <td>E1</td>
+              <td>Generalizable Unpaired Point Cloud Completion</td>
+            </tr>
+            <tr>
+              <td>Rastko Ciric, Charles Huang and Gustavo Chau</td>
+              <td>E2</td>
+              <td>Learning latent dimensions of the functional connectomic morphospace with deep disentanglement</td>
+            </tr>
+            <tr>
+              <td>Manan Shah, Shrey Gupta</td>
+              <td>E3</td>
+              <td>Deep SteGANography for Embedding Messages in Images</td>
+            </tr>
+            <tr>
+              <td>Justin Wong</td>
+              <td>E4</td>
+              <td>Improved Text-Conditioned Image Generation</td>
+            </tr>
+            <tr>
+              <td>Kevin Lee, Pablo Diaz</td>
+              <td>E5</td>
+              <td>MobileNet Adaptation for Pose-Guided Human Image Generation</td>
+            </tr>
+            <tr>
+              <td>Kelly He, Wen Zhou, Chaonan Ye</td>
+              <td>E6</td>
+              <td>ComposerGAN: An AI Music Composer</td>
+            </tr>
+            <tr>
+              <td>Mark Koren</td>
+              <td>E7</td>
+              <td>Deep Image Falsification for Autonomous Vehicles</td>
+            </tr>
+            <tr>
+              <td>Haruki Nishimura</td>
+              <td>E8</td>
+              <td>Normalizing Belief Flow: Learning Bayesian Belief Dynamics for Probabilistic Sequence Generation</td>
+            </tr>
+            <tr>
+              <td>Mihir Patel, Vinjai Vale, Eric Frankel</td>
+              <td>E9</td>
+              <td>FARM: Family of AutoRegressive Models</td>
+            </tr>
+            <tr>
+              <td>Allan Zhou</td>
+              <td>E10</td>
+              <td>Meta-learned Optimizers</td>
+            </tr>
+            <tr>
+              <td>Graham Todd, Collin Schlager, Natalie Cygan</td>
+              <td>F1</td>
+              <td>Learning to Groove: Conditional Melody Generation from Authentic Basslines</td>
+            </tr>
+            <tr>
+              <td>Andy Shih</td>
+              <td>F2</td>
+              <td>Variational Inference with Probabilistic Circuits</td>
+            </tr>
+          </tbody> -->
+        </table>
+  <!-- </div> -->
+
+
+  <!-- <p><a name="toc2"></a></p>
+  <h3>Afternoon Session</h3>
+  <br> -->
+  <!-- <div class="container"> -->
+    <!-- <table id="schedule" class="table table-bordered no-more-tables">
+        <thead class="active" style="background-color:#f9f9f9">
+            <tr>
+              <th>Names</th>
+              <th>Position</th>
+              <th>Title</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td>Maneekwan Toyungyernsub</td>
+              <td>A1</td>
+              <td>Generating Point Clouds</td>
+            </tr>
+            <tr>
+              <td>John Chuter</td>
+              <td>A2</td>
+              <td>In Other Words: NLP Formality Style Transfer</td>
+            </tr>
+            <tr>
+              <td>Gino Tesei</td>
+              <td>A3</td>
+              <td>Facial Unpaired Image-to-Image Translation with Conditional Cycle-Consistent Generative Adversarial Networks</td>
+            </tr>
+            <tr>
+              <td>Kevin Tan</td>
+              <td>A4</td>
+              <td>Auto-Encoding Scene Graphs with Image Reconstruction</td>
+            </tr>
+            <tr>
+              <td>Vikul Gupta</td>
+              <td>A5</td>
+              <td>Meta-learning using Neural Processes</td>
+            </tr>
+            <tr>
+              <td>Dan Dore</td>
+              <td>A6</td>
+              <td>Dialogue Generation with GANs</td>
+            </tr>
+            <tr>
+              <td>Derek Huang, Taresh Sethi</td>
+              <td>A7</td>
+              <td>Quantifying Speaker Abilities Using Latent Space Features</td>
+            </tr>
+            <tr>
+              <td>Hui Xue</td>
+              <td>A8</td>
+              <td>Synthesis of Pediatric Cardiac Cine from Adult MRI using CycleGAN for Automated Segmentation of Myocardium</td>
+            </tr>
+            <tr>
+              <td>Amy Wang</td>
+              <td>A9</td>
+              <td>Learning Latent Representations for Triphones in Singing</td>
+            </tr>
+            <tr>
+              <td>Yang Zhao</td>
+              <td>A10</td>
+              <td>Image Super Resolution With GAN</td>
+            </tr>
+            <tr>
+              <td>Yuanjun Li; Su Jiang; Jiahui Wang</td>
+              <td>B1</td>
+              <td>Missing Data Imputation with GAN</td>
+            </tr>
+            <tr>
+              <td>Raghu Dhara</td>
+              <td>B2</td>
+              <td>Parametric Accent Hybridization: Combining Speech Idiosyncrasies Using Latent Space Interpolation</td>
+            </tr>
+            <tr>
+              <td>JunYoung Gwak, Priya Kasimbeg</td>
+              <td>B3</td>
+              <td>Text conditioned image generation</td>
+            </tr>
+            <tr>
+              <td>Shawn Manuel</td>
+              <td>B4</td>
+              <td>World Models for Deep Reinforcement Learning</td>
+            </tr>
+            <tr>
+              <td>Gorish Aggarwal</td>
+              <td>B5</td>
+              <td>Graph Generation Models</td>
+            </tr>
+            <tr>
+              <td>Zhaoyou Wang, Yue Hui</td>
+              <td>B6</td>
+              <td>Parallel Auto-Regressive Image Flows</td>
+            </tr>
+            <tr>
+              <td>Michael Ko, Sicheng Zeng</td>
+              <td>B7</td>
+              <td>Progressive Flow for High Dimentional Image Generation</td>
+            </tr>
+            <tr>
+              <td>Alex Kim, Kevin Tran</td>
+              <td>B8</td>
+              <td>Image Generation via Conditional Variational Auto-Encoder</td>
+            </tr>
+            <tr>
+              <td>Negin Heravi</td>
+              <td>B9</td>
+              <td>Action Aware Generative Models for Haptic Texture Generation</td>
+            </tr>
+            <tr>
+              <td>Canyon Robins, Jose Giron</td>
+              <td>B10</td>
+              <td>GAN Superresolution for High Spatial and Temporal Resolution Remote Sensing Data</td>
+            </tr>
+            <tr>
+              <td>Abhishek Sinha, Akshat Jindal, Kumar Ayush</td>
+              <td>C1</td>
+              <td>Diagnosis of Conditional GANs via Discriminative Ability of the Discriminator</td>
+            </tr>
+            <tr>
+              <td>Linjia Wu, Ye Ye</td>
+              <td>C2</td>
+              <td>Point Cloud Generation</td>
+            </tr>
+            <tr>
+              <td>Joshua Chang, Troy Shen</td>
+              <td>C3</td>
+              <td>Caption-to-Image Conditional Generative Modeling using Mirror GAN</td>
+            </tr>
+            <tr>
+              <td>Kathleen Kenealy</td>
+              <td>C4</td>
+              <td>Adversarial Learning for Neural Dialogue Generation</td>
+            </tr>
+            <tr>
+              <td>Devang Agrawal, Charles Rajan, Trisha Singh</td>
+              <td>C5</td>
+              <td>Generalized Text-to-Image Conditional Generative Modeling</td>
+            </tr>
+            <tr>
+              <td>Alex Boulton McKeehan</td>
+              <td>C6</td>
+              <td>Better title TBD (Generating Datasets by Learning Priors)</td>
+            </tr>
+            <tr>
+              <td>Arun Seetharaman</td>
+              <td>C7</td>
+              <td>Using Deep Generative Models to Reconstruct MRI</td>
+            </tr>
+            <tr>
+              <td>Sophia Barton, Danny Takeuchi</td>
+              <td>C8</td>
+              <td>Text-to-Image Conditional Generative Modeling</td>
+            </tr>
+            <tr>
+              <td>Jiahong Ouyang, Liu Yang</td>
+              <td>C9</td>
+              <td>Attributes Aware Latent Space Interpolation for Unpaired Image-to-image Translation</td>
+            </tr>
+            <tr>
+              <td>Rohan Badlani and Aditya Dusi</td>
+              <td>C10</td>
+              <td>DyGen: A Generative Model for Dynamic Temporal Graphs</td>
+            </tr>
+            <tr>
+              <td>Jason Ginsberg and Jonathan Zwiebel</td>
+              <td>D1</td>
+              <td>Generative MPI View Synthesis</td>
+            </tr>
+            <tr>
+              <td>Min Jun Park</td>
+              <td>D2</td>
+              <td>Toward 3D subsurface model generation</td>
+            </tr>
+            <tr>
+              <td>Julie Makelberge, Jacqueline Yau, Chris Lis</td>
+              <td>D3</td>
+              <td>Exploring multi-lingual text to speech</td>
+            </tr>
+            <tr>
+              <td>Srivatsan Sridhar, Varun Srivastava</td>
+              <td>D4</td>
+              <td>AdvAE and FlowVAE : Sampling Arbitrary Latent Variable Distributions in an Autoencoder</td>
+            </tr>
+            <tr>
+              <td>Mike Salvato</td>
+              <td>D5</td>
+              <td>Predictive hand tracking for haptic feedback</td>
+            </tr>
+            <tr>
+              <td>Eric Yang</td>
+              <td>D6</td>
+              <td>Variational Robot Grasp Generation</td>
+            </tr>
+            <tr>
+              <td>Sina Jandaghi Semnani, Fatma Tlili</td>
+              <td>D7</td>
+              <td>Data-Efficient Arbitrary Image Attribute Editing</td>
+            </tr>
+            <tr>
+              <td>Yongsoo Park</td>
+              <td>D8</td>
+              <td>Synthetic World Generation</td>
+            </tr>
+            <tr>
+              <td>Sreeram Venkatarao</td>
+              <td>D9</td>
+              <td>De Novo Drug Design with Transformer Architectures and Reinforcement Learning</td>
+            </tr>
+            <tr>
+              <td>Jeffrey Gu</td>
+              <td>D10</td>
+              <td>Information-Theoretic Definitions for Disentanglement</td>
+            </tr>
+            <tr>
+              <td>Alice Yang</td>
+              <td>E1</td>
+              <td>Adversarial Autoencoders for 3D Point Cloud Representation</td>
+            </tr>
+            <tr>
+              <td>Karen Yang</td>
+              <td>E2</td>
+              <td>GCN-VAE for Knowledge Graph Generation</td>
+            </tr>
+            <tr>
+              <td>Derrick Xin</td>
+              <td>E3</td>
+              <td>Sinkhorn GAN</td>
+            </tr>
+            <tr>
+              <td>Eva Zhang, Joyce Xu</td>
+              <td>E4</td>
+              <td>Entropy-Regularized Conditional GANs for Image Diversity in Data Generation</td>
+            </tr>
+            <tr>
+              <td>Wei Kang</td>
+              <td>E5</td>
+              <td>Image Super Resolution With GAN</td>
+            </tr>
+            <tr>
+              <td>Kenneth Wang, Jeffrey Hu, Gleb Shevchuk</td>
+              <td>E6</td>
+              <td>Deep Crop Yield Prediction in East Africa</td>
+            </tr>
+            <tr>
+              <td>Ziyi Yang, Teng Zhang</td>
+              <td>E7</td>
+              <td>Memory Augmented Generative Adversarial Networks for Anomaly Detection</td>
+            </tr>
+            <tr>
+              <td>Eric Mitchell, Saurabh Kumar</td>
+              <td>E8</td>
+              <td>Learning Latent Spaces for Reinforcement Learning</td>
+            </tr>
+            <tr>
+              <td>Adrian Costantino</td>
+              <td>E9</td>
+              <td>Text-to-Image Conditional Generative Modeling</td>
+            </tr>
+            <tr>
+              <td>Zhanghao Sun, Qiwen Wang, Mi Yu</td>
+              <td>E10</td>
+              <td>Semantic Segmentation Domain Adaptation with Generative Model</td>
+            </tr>
+            <tr>
+              <td>Ali Mottaghi</td>
+              <td>F1</td>
+              <td>Adversarial Representation Active Learning</td>
+            </tr>
+            <tr>
+              <td>Bosen Ding</td>
+              <td>F2</td>
+              <td>Face Swapping by CycleGAN</td>
+            </tr>
+            <tr>
+              <td>Kurt Adelberger</td>
+              <td>F3</td>
+              <td>A singing robot:  real-time conditional sampling</td>
+            </tr>
+            <tr>
+              <td>Weixin Liang, Zixuan Liu, Can Liu</td>
+              <td>F4</td>
+              <td>Music MATINEE: Unsupervised Domain Adaptive Music Generation via Meta Learning</td>
+            </tr>
+            <tr>
+              <td>Khalid Ahmad</td>
+              <td>F5</td>
+              <td>Augmented PixelCNN? Just add Attention.</td>
+            </tr>
+            <tr>
+              <td>Han Lin Aung</td>
+              <td>F6</td>
+              <td>Farmland Parcel Delineation Using Generative Modeling</td>
+            </tr>
+            <tr>
+              <td>Mason Swofford, John Peruzzi, Nikita Demir</td>
+              <td>F7</td>
+              <td>MeGAN: Semi-supervised Image Augmentation for Few-Shot Classification</td>
+            </tr>
+            <tr>
+              <td>Ethan Oro</td>
+              <td>F8</td>
+              <td>Autogregssive Models for Music Generation</td>
+            </tr>
+            <tr>
+              <td>Yanyang Emma Kong, Kris Ma</td>
+              <td>F9</td>
+              <td>Chinese Painting Style Transfer Using Deep Generative Models</td>
+            </tr>
+            <tr>
+              <td>Henrik Marklund</td>
+              <td>F10</td>
+              <td>Semi-parametric approaches to Text-to-Image Generation</td>
+            </tr>
+            <tr>
+              <td>Sarah Gurev</td>
+              <td>G1</td>
+              <td>Screening for Gaucher Disease with Semi Supervised GANs</td>
+            </tr>
+            <tr>
+              <td>Mingkun Chen</td>
+              <td>G2</td>
+              <td>Metasurface Design Based on Generative Neural Networks</td>
+            </tr>
+            <tr>
+              <td>Hugo Kitano, Taide Ding</td>
+              <td>G3</td>
+              <td>Generalized Text-to-Image Conditional Generative Modeling</td>
+            </tr>
+            <tr>
+              <td>Jon Braatz, Daniel Tsai</td>
+              <td>G4</td>
+              <td>Optimizing Probability Distillation for Autoregressive Flow Models</td>
+            </tr>
+            <tr>
+              <td>Mustafa Omer Gul</td>
+              <td>G5</td>
+              <td>Text-to-Image Synthesis with MirrorGAN</td>
+            </tr>
+            <tr>
+              <td>Isaac Westlund</td>
+              <td>G6</td>
+              <td>Pseudo-Random Permutations Using Generative Adversarial Networks</td>
+            </tr>
+            <tr>
+              <td>Andrew Nam, Josh Ryu</td>
+              <td>G7</td>
+              <td>Probabilistic neural physics simulation</td>
+            </tr>
+            <tr>
+              <td>Justin Amezquita</td>
+              <td>G8</td>
+              <td>The Artificially Intelligent Investor</td>
+            </tr>
+            <tr>
+              <td>Andrew Miller-Smith</td>
+              <td>G9</td>
+              <td>Super Mario Zelgan: Recreating beloved video games via conditional progressive GANs</td>
+            </tr>
+            <tr>
+              <td>Jason Zheng, Makena Low, Michael Cooper</td>
+              <td>G10</td>
+              <td>GLow EP: Generating Low-Emittance Photocathodes for Particle Accelerators.</td>
+            </tr>
+            <tr>
+              <td>Qiaoyi Liu, Zewen Zhang</td>
+              <td>H1</td>
+              <td>Domain Gap in Image Super Resolution Generative Neural Networks</td>
+            </tr>
+            <tr>
+              <td>Sarah Hensley</td>
+              <td>H2</td>
+              <td>Varying Training Set Size with Caption-to-Image Generative Modeling</td>
+            </tr>
+            <tr>
+              <td>Arda Sahiner</td>
+              <td>H3</td>
+              <td>Using VAW-GANs on Raw Audio for Voice Conversion</td>
+            </tr>
+            <tr>
+              <td>Minfa Wang</td>
+              <td>H4</td>
+              <td>Mask CycleGAN: Unpaired Multi-modal Domain Translation with Interpretable Latent Variable</td>
+            </tr>
+            <tr>
+              <td>Ademi Adeniji</td>
+              <td>H5</td>
+              <td>Latent Skill Transfer for Simulated Agents</td>
+            </tr>
+            <tr>
+              <td>Scott Fleming, Will Song</td>
+              <td>H6</td>
+              <td>Learning Accurate Generative Models of ICU Patient Data for Real-Time Heparin Dosing Assistance</td>
+            </tr>
+          </tbody> -->
+<!-- </div> -->
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+</body></html>

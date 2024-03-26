@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CS281: Ethics of Artificial Intelligence -- Stanford University </title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+    <!-- Google fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+
+<div id="header">
+    <a href="http://stanford.edu/">
+        <img src="img/stanfordlogo.jpg" style="height:50px; float: right; margin-right: 20px;">
+    </a>
+    <h1><a href="https://stanfordaiethics.github.io/" style="color: black">Ethics of Artificial Intelligence</a></h1>
+    <div class='text-center'>
+        <h4>CS281 - Spring 2023</h4>
+    </div>
+    <hr/>
+</div>
+
+<!--<div class="container sec" style="margin-top: 1em">-->
+<!--    <h2>Detailed Syllabus</h2>-->
+<!--</div>-->
+
+
+<div class="container" style="align-content: center">
+    <h2>Detailed Syllabus</h2>
+    <br>
+    <!--    <table id="schedule" class="center table table-bordered no-more-tables table-hover">-->
+    <table id="schedule" class="table table-bordered no-more-tables table-hover" style="align-self: center">
+        <thead class="active" style="background-color:#f9f9f9">
+        <th class="text-center">Week</th>
+        <th class="text-center">Date</th>
+        <th class="text-center">Lecture Topics</th>
+        <th class="text-center">Location</th>
+        <th class="text-center">Assigned</th>
+	<th class="text-center">Due</th>
+        </thead>
+
+        <tbody>
+
+
+        <tr>
+            <td>1</td>
+            <td align="center">
+                Apr 3
+                <br>
+                Apr 5
+            </td>
+            <td align="center">
+                Introduction
+               [<a href="https://drive.google.com/file/d/1S5FAsGnv62bSl50VWp9kqO3AJfbNf9fs/view?usp=sharing">slides</a><!--,
+                <a href="https://drive.google.com/file/d/1ozMPbta_BROUewXJ5JcGGAYBDekvH2RA/view?usp=sharing">slides2022-a</a>-->]
+                <br>
+                <nobr>
+                    Operationalized Fairness Criteria
+                    [<a href="https://drive.google.com/file/d/1yUMK8ucuDx5ks4N7jN8BSJ65RJMcTJBO/view?usp=sharing">slides</a>,
+                    <a href="https://drive.google.com/file/d/1HvYmb9hhYXC6QMvhuMOVw-ltA5JzUxJH/view?usp=share_link">
+                        slides-a</a>]
+                </nobr>
+            </td>
+            <td align="center"><a href="http://maps.stanford.edu/ada/building-ada.cfm?FACIL_ID=01-200">200</a>-305</td>
+            <td align="center">
+                <a
+            href="https://github.com/stanfordaiethics/hw1_public/blob/master/hw1.pdf">HW 1
+            released </a> (Apr 6)
+            </td>
+	    <td align="center"></td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td align="center"> Apr 10 <br>Apr 12</td>
+            <td align="center">
+                <nobr>
+                    Calibration & Fairness
+                    [<a href="https://drive.google.com/file/d/1hg2h1bbRIFPdIpHQLSAyuaASWt1-b0Dj/view?usp=sharing">slides</a>,
+                    <a href="https://drive.google.com/file/d/1seKRkNpkRVQfcRTDkY2yG3tENbl9qF0W/view?usp=sharing">
+                        slides-a</a>],
+                    Learning Group "Fair" Models
+                    [<a href="https://drive.google.com/file/d/1rcFIDPujpmLGRdOJ5zqtkjlS5PbYztVx/view?usp=sharing">slides</a>,
+                    <a href="https://drive.google.com/file/d/1BBp4ZhNeaEbs-WwVxKrclB4kiGa3AdKX/view?usp=share_link">
+                        slides-a</a>]
+	      </nobr>
+	      <br>
+	        Guest Lecture by
+                <a href="https://law.stanford.edu/directory/david-freeman-engstrom/"> David Engstrom</a>
+                -- "The Legal Perspective"
+                <!--[<a href="https://drive.google.com/file/d/1AdSPJo3uOkviYDvlh8_JehJf0TZ_ezg4/view?usp=sharing">slides2022</a>]-->
+
+            </td>
+            <td align="center"><a href="http://maps.stanford.edu/ada/building-ada.cfm?FACIL_ID=01-200">200</a>-305</td>
+            <td align="center"></td>
+            <td align="center"></td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td align="center"> Apr 17 <br>Apr 19</td>
+            <td align="center">
+                <nobr>
+                Fair Models via Constrained Optimization
+                [<a href="https://drive.google.com/file/d/1XhHtMCDM8qH3odlYlDVs6dD2JpfHgAxe/view?usp=share_link">slides</a>, <a href="https://drive.google.com/file/d/18FHdDEYZ3mZcTfOTMaivKjR4U1Id8VOn/view?usp=share_link">slides-a</a>],
+                </nobr>
+                    Individual Fairness
+                    [<a href="https://drive.google.com/file/d/1sW0yhhQjdJXPjelGqnv81VUOCOh_T7pI/view?usp=share_link">slides</a>,
+                    <a href="https://drive.google.com/file/d/1wDhAGTONQ1axGdi9QPIXbUZTLb6Ky9XV/view?usp=share_link">
+                        slides-a</a>]
+                    <br>
+                    Bias in NLP
+                    [<a href="https://drive.google.com/file/d/17nCtQlB3XwGXO3uIJ7oVenT6_n8juZe0/view?usp=share_link">slides</a>,
+                    <a href="https://drive.google.com/file/d/1TnX5ntgtIYpGHwfRWBCrAYvMSuV6s6SL/view?usp=share_link">
+                        slides-a</a>],
+                    Fairness and Causality
+                    [<a href="https://drive.google.com/file/d/1TmXJ_Q5MyRe3dE3HtPkCRdSS8FJwMtCY/view?usp=share_link">slides</a>,
+                    <a href="https://drive.google.com/file/d/12MQsn4cjRLX5ql5_pqa501GMpdUNqZBJ/view?usp=share_link">slides-a</a>]
+            </td>
+            <td align="center">
+                <a href="http://maps.stanford.edu/ada/building-ada.cfm?FACIL_ID=01-200">200</a>-305
+                <br>
+                <nobr>
+                    
+                </nobr>
+            </td>
+	    <td align="center"></td>
+            <td align="center">
+                HW 1(Apr 17)
+            </td>
+        </tr>
+
+        <tr>
+            <td>4</td>
+            <td align="center"> Apr 24 <br>Apr 26</td>
+            <td align="center">
+                    Fairness Socio-Technical Analysis
+<br>
+	      Explainability and Transparency
+                [<a href="https://drive.google.com/file/d/1GSYrA4ewNyQMd34pqLNN700HoY9puCzv/view?usp=share_link">slides</a>,
+                <a href="https://drive.google.com/file/d/1udt1MSol3k8Gp6_E1tuoOdfmdOmzI8SJ/view?usp=share_link">slides-a</a>]
+	      Feature Attribution and LIME
+                [<a href="https://drive.google.com/file/d/1iyZZSKYv0z6LeTGBaVbLT1979WanmvA_/view?usp=share_link">slides</a>,
+                <a href="https://drive.google.com/file/d/1oRL82atf4uulyNZQp6gh5B5saxWGMXZm/view?usp=share_link">slides-a</a>]
+            </td>
+            <td align="center">
+                
+                <br>
+                <a href="http://maps.stanford.edu/ada/building-ada.cfm?FACIL_ID=01-200">200</a>-305
+            </td>
+            <td align="center">
+		    <nobr>
+			    
+			     <a href="https://github.com/stanfordaiethics/hw2_public/blob/main/hw2.pdf">HW 2 released </a> (Apr 24)
+		<br>
+			    <a href="https://github.com/stanfordaiethics/exploring_alpaca/blob/main/exploratory_project.pdf">exploratory project released </a> (Apr 27)
+			    
+			    
+                <br>
+            </td>
+	<td align="center"> socio-tech summary (Apr 26) </td>
+        </tr>
+
+        <tr>
+	  <td>5</td>
+            <td align="center"> May 1 <br>May 3</td>
+	    <td align="center">
+	      Shapley Values & SHAP
+	      [<a
+	      href="https://drive.google.com/file/d/1DlNtKah2gphjFDh8JW9D6DdaACw8yFSr/view?usp=share_link">slides</a>, 
+	      <a href="https://drive.google.com/file/d/1kMKoag3iBt4Ble1qv8G_scaMjc8I56nH/view?usp=share_link">slides-a</a>],
+	      Saliency Maps
+	      [<a href="https://drive.google.com/file/d/1aQk5OzhT_FoMBEZjdSoi_oMJN607h7cr/view?usp=share_link">slides</a><,
+	      <a
+	      href="https://drive.google.com/file/d/16-PP0aIG5jJOZATXiFrozbYx-40iphlM/view?usp=share_link">slides-a</a>]
+	      <br>
+	      Exemplar-Based Explanations
+	      [<a href="https://drive.google.com/file/d/18y_8h-zs-re1JCVQQs_qqXu8mouOUh7V/view?usp=share_link">slides</a>,
+	      <a href="https://drive.google.com/file/d/1gPN1azyA0qY0i4AtSViM3KtlyftxbxLU/view?usp=share_link">slides-a</a>],
+	      Concept-Based Explanations
+	      [<a href="https://drive.google.com/file/d/1069NT7Tr8UP8iq4bJ-KO1ikJtm-c9FWd/view?usp=share_link">slides</a>,
+	      <a href="https://drive.google.com/file/d/1-a1KbE6ac-ztsodK4YQ5Uy9vBE3K4E-o/view?usp=share_link">slides-a</a>],
+            </td>
+            <td align="center"><a href="http://maps.stanford.edu/ada/building-ada.cfm?FACIL_ID=01-200">200</a>-305</td>
+            <td align="center"></td>
+            <td align="center"></td>
+        </tr>
+
+
+        <tr>
+            <td>6</td>
+            <td align="center"> May 8 <br>May 10</td>
+            <td align="center">
+	      Explainability Socio-Technical Analysis
+	      <br>
+	      Counterfactual Explanations
+	      [<a href="https://drive.google.com/file/d/1_ybBlxA4z9KpTvA7eUHNbzf3hygptnzs/view?usp=share_link">slides</a>,
+	      <a
+	      href="https://drive.google.com/file/d/1DrGk-04t1CMrSRR-E-aQgl88iHKC11di/view?usp=share_link">slides-a</a>],
+	      Privacy and ML, Differential Privacy
+	      [<a href="https://drive.google.com/file/d/1WO6HObLRZX4VWCrO-Gq_XHFXdtX4Ajyr/view?usp=share_link">slides</a>,
+	      <a href="https://drive.google.com/file/d/1jH8asLgNuUAheBBX8QjuL5rp0eGu2MXk/view?usp=sharing">slides-a</a>]
+            </td>
+            <td align="center"><a href="http://maps.stanford.edu/ada/building-ada.cfm?FACIL_ID=01-200">200</a>-305</td>
+        <td align="center"></td>    
+	<td align="center">
+                <nobr>
+	      final project proposal (May 12)
+
+                <br>
+                HW 2 (May 10)
+            </td>
+        </tr>
+
+        <tr>
+            <td>7</td>
+            <td align="center">
+                <nobr>
+                    May 15
+                </nobr>
+                <br>
+                May 17
+            </td>
+            <td align="center">
+	      Guest Lecture by <a href="http://robreich.stanford.edu/">Rob Reich</a> -- "What Is Fairness?"
+	      [<a href="https://drive.google.com/file/d/1kBt97lXrRPmfeyyqpXezviXtB0OA_CNj/view?usp=share_link">slides</a>]
+	      <br>
+	      Differential Privacy -- continued
+            </td>
+            <td align="center">
+                <nobr>
+                    <a href="http://maps.stanford.edu/ada/building-ada.cfm?FACIL_ID=01-200">200</a>-305
+                </nobr>
+                <br>
+                
+            </td>
+	<td align="center"> <a href="">HW 3 released </a> (May 17) </td>   
+            <td align="center">
+               <nobr>
+		       exploratory project (May 15)
+                </nobr>
+		<nobr>
+			socio-tech summary (May 17)
+                </nobr>
+     
+            </td>
+        </tr>
+
+
+        <tr>
+            <td>8</td>
+            <td align="center"> May 22 <br>May 24</td>
+            <td align="center">
+	      Learning with Differential privacy
+	      [<a href="https://drive.google.com/file/d/1IR9c0TDUinV_UCt7Wgww6AmPif4hXQh_/view?usp=share_link">slides</a>,
+	      <a href="https://drive.google.com/file/d/1TSWyrnVDLyZHDu0UzPS7YVyJiajBMJQ9/view?usp=sharing">slides-a</a>]
+	      Federated Learning
+	      [<a href="https://drive.google.com/file/d/1BtNXQqJtqGHouirXDQc-ZI3iAigLgc_1/view?usp=sharing">slides</a>,
+	      <a href="https://drive.google.com/file/d/1vYhsypSClSAaEkwaY8UujH0LhZBdQgkt/view?usp=share_link">slides-a</a>]
+	      <br>
+	      Large Language Models and the Ethics of AI: Impact, Gaps and Opportunities
+            </td>
+            <td align="center"><a href="http://maps.stanford.edu/ada/building-ada.cfm?FACIL_ID=01-200">200</a>-305</td>
+	    <td align="center"></td>   
+	<td align="center">
+	      final project milestone (May 24)
+            </td>
+        </tr>
+
+        <tr>
+            <td>9</td>
+            <td> May 29 <br>May 31</td>
+            <td align="center">
+	      Memorial Day -- No class
+	      <br>
+	      Guest Lecture by <a href="https://beenkim.github.io/">
+            Been Kim</a> on "Beyond AI safety: developing machines
+	      that work for us"
+	      	      [<a href="https://drive.google.com/file/d/1BKoWinVEgBdQxhaZbm9bkp9LntuJmC7E/view?usp=sharing">slides</a>]
+            </td>
+	    <td align="center">
+	      <br>
+                <a href="https://stanford.zoom.us/j/98785095482?pwd=THRmNVFPWnBnS215T0NQZnN4STVaUT09&from=addon">Zoom</a>
+                <nobr>
+                    
+                </nobr>
+            </td>
+	<td align="center"> </td>   
+            <td>
+                HW 3 (May 31)
+            </td>
+        </tr>
+
+        <tr>
+            <td>10</td>
+            <td> June 5 <br> June 7</td>
+            <td align="center">
+                Privacy Socio-Technical Analysis
+                <br>
+                Closing Discussion -- Trust in AI
+                [<a href="https://drive.google.com/file/d/1xJgsFo-Ggh_Li5oEPo8Elu7MY7AEph0b/view?usp=sharing">slides</a>]
+            </td>
+            <td align="center"><a href="http://maps.stanford.edu/ada/building-ada.cfm?FACIL_ID=01-200">200</a>-305</td>
+           <td align="center">  </td>   
+		<td align="center">
+		   
+               <nobr>
+                    Socio-tech summary (June 7)
+                </nobr>
+            </td>
+        </tr>
+        <tr style="text-align:center; vertical-align:middle;background-color:#FFF2F2">
+            <td colspan="6" style="text-align:center; vertical-align:middle;">
+                <b>
+	      poster session <!--June 8, time and location TBD-->
+                    CANCELED
+                </b>
+            </td>
+        </tr>
+
+        <tr style="text-align:center; vertical-align:middle;background-color:#FFF2F2">
+            <td colspan="6" style="text-align:center; vertical-align:middle;">
+                <b>
+	      project final report due June 12
+                </b>
+            </td>
+        </tr>
+	
+
+        <!--    <tr style="text-align:center; vertical-align:middle;background-color:#FFF2F2">-->
+        <!--      <td align="left"></td>-->
+        <!--      <td align="left"></td>-->
+        <!--      <td colspan="3" style="text-align:center; vertical-align:middle;">-->
+        <!--        Poster Presentation: <b>Day</b>: December 03, 2021 - <b>Time</b>: Session A: 11am - 1pm, Session B: 1:30pm - 3:30pm - <b>Location</b>: McCaw Hall (Alumni Center)-->
+        <!--      </td>-->
+        <!--  </tr>-->
+
+        <!--  <tr>-->
+        <!--      <td>12</td>-->
+        <!--      <td> Dec 06  </td>-->
+        <!--      <td align="center">-->
+        <!--          Finals Week-->
+        <!--      </td>-->
+        <!--      <td align="center"></td>-->
+        <!--  </tr>-->
+
+        <!--<tr style="text-align:center; vertical-align:middle;background-color:#FFF2F2">-->
+        <!--        <td align="left"></td>-->
+        <!--        <td align="left"></td>-->
+        <!--        <td colspan="3" style="text-align:center; vertical-align:middle;">-->
+        <!--          Final Project Reports: Due Tuesday, December 07, 2021-->
+        <!--        </td>-->
+        <!--</tr>-->
+
+        </tbody>
+
+    </table>
+</div>
+
+<!--<hr/>-->
+<!--<div class="container sec">-->
+<!--  <h2>Additional Reading: Surveys and Tutorials</h2>-->
+<!--  <br>-->
+<!--  <ol>-->
+<!--      <li><a href="http://yang-song.github.io/blog/2021/score/">Generative Modeling by Estimating Gradients of the Data Distribution</a> Yang Song. Blog post on score-based generative models, May 2021.</li>-->
+<!--      <li><a href="https://arxiv.org/abs/2101.03288">How to Train Your Energy-Based Models.</a> Yang Song and Diederik P. Kingma. February 2021. </li>-->
+<!--      <li><a href="https://ermongroup.github.io/generative-models/">Tutorial on Deep Generative Models.</a> Aditya Grover and Stefano Ermon. International Joint Conference on Artificial Intelligence, July 2018.</li>-->
+<!--      <li><a href="https://sites.google.com/view/cvpr2018tutorialongans/">Tutorial on Generative Adversarial Networks.</a> Computer Vision and Pattern Recognition, June 2018.</li>-->
+<!--      <li><a href="https://www.youtube.com/watch?v=JrO5fSskISY">Tutorial on Deep Generative Models.</a> Shakir Mohamed and Danilo Rezende. Uncertainty in Artificial Intelligence, July 2017.</li>-->
+<!--      <li><a href="https://www.youtube.com/watch?v=AJVyzd0rqdc">Tutorial on Generative Adversarial Networks.</a> Ian Goodfellow. Neural Information Processing Systems, December 2016.</li>-->
+<!--      <li><a href="https://www.cs.cmu.edu/~rsalakhu/papers/annrev.pdf">Learning deep generative models.</a> Ruslan Salakhutdinov. Annual Review of Statistics and Its Application, April 2015.</li>-->
+<!--    </ol>-->
+<!--</div>-->
+
+<!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>-->
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>-->
+<!--</body></html>-->
