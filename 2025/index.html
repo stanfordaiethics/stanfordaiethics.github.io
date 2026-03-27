@@ -1,0 +1,280 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CS281: Ethics of Artificial Intelligence -- Stanford University</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+    <!-- Google fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+
+<div id="header">
+    <a href="http://stanford.edu/">
+        <img src="img/stanfordlogo.jpg" style="height:50px; float: right; margin-right: 20px;">
+    </a>
+    <h1><a href="https://stanfordaiethics.github.io/" style="color: black">Ethics of Artificial Intelligence</a></h1>
+    <div class='text-center'>
+        <h4>CS 281 - Spring 2025</h4>
+    </div>
+    <hr/>
+</div>
+
+<div style="text-align:center; padding:10px 0px 20px 0px;">
+    <a href="syllabus.html" style="margin-right:40px">
+        <button type="button" class="btn btn-primary btn-lg">Syllabus</button>
+    </a>
+    <a href="https://docs.google.com/document/d/1chFYAnSWxD6CvsxO7PakadUt2WN4Ef_wiEsaCmXEEEY/edit?usp=sharing"
+       style="margin-right:40px">
+        <button type="button" class="btn btn-primary btn-lg">Readings</button>
+    </a>
+    <a href="assignments.html" style="margin-right:40px">
+        <button type="button" class="btn btn-primary btn-lg">Assignments</button>
+    </a>
+    <a href="https://docs.google.com/document/d/1QMYCifESuTy6j7mnSR5iWNZXZALCj8uwXF6cUDGKEXk/edit?usp=sharing"
+       style="margin-right:40px">
+        <button type="button" class="btn btn-primary btn-lg">Project</button>
+    </a>
+    <a href="https://edstem.org/us/courses/76918/discussion" style="margin-right:40px">
+        <button type="button" class="btn btn-primary btn-lg">Ed</button>
+    </a>
+</div>
+
+<div class="container sec">
+    <h2>Course Description</h2>
+    <div id="coursedesc">
+        Machine learning has become an indispensable tool for creating intelligent applications, accelerating scientific
+        discoveries, and making better data-driven decisions. Yet the automation and scaling of such tasks can have
+        troubling negative societal impacts. Through practical case studies, you will identify issues of fairness,
+        justice, and truth inherent in AI applications. You will then apply recent techniques to detect and mitigate such
+        algorithmic biases, along with methods that provide more transparency and explainability to state-of-the-art ML
+        models. Finally, you will derive fundamental formal results on the limits of such techniques, along with
+        tradeoffs that must be made for their practical application.
+    </div>
+<hr/>
+<div class="container sec">
+    <!-- Row for section headers -->
+    <div class="row text-center">
+      <div class="col-md-4">
+        <h2>Instructor</h2>
+      </div>
+      <div class="col-md-8">
+        <h2>Course Assistants</h2>
+      </div>
+    </div>
+  
+    <br>
+  
+    <!-- Row for the staff members -->
+    <div class="row text-center">
+      <!-- Carlos -->
+      <div class="col-md-4">
+        <div class="instructor">
+          <a href="https://guestrin.su.domains/">
+            <div class="instructorphoto"><img src="img/guestrin.jpg"></div>
+            <div>Carlos Guestrin</div>
+          </a>
+        </div>
+        <br>
+        <div class="office-hours">
+          <strong> Office Hours</strong> <br>
+          Friday 3:00 pm - 4:00 pm, Gates 346
+        </div>
+      </div>
+  
+      <!-- Kara -->
+      <div class="col-md-4">
+        <div class="instructor">
+          <a href="https://karamarieliu.github.io/">
+            <div class="instructorphoto"><img src="img/kara.jpg"></div>
+            <div>Kara Liu</div>
+          </a>
+        </div>
+        <br>
+        <div class="office-hours">
+          <strong> Office Hours</strong> <br>
+          Thursday 10:00 am - 12:00 pm, Gates 200
+        </div>
+      </div>
+  
+      <!-- Liana -->
+      <div class="col-md-4">
+        <div class="instructor">
+          <a href="https://liana313.github.io/">
+            <div class="instructorphoto"><img src="img/liana.jpg"></div>
+            <div>Liana Patel</div>
+          </a>
+        </div>
+        <br>
+        <div class="office-hours">
+          <strong> Office Hours</strong> <br>
+          Friday 10:00 am - 12:00 am, Gates 302
+        </div>
+      </div>
+    </div>
+  </div>
+  
+<hr/>
+
+<div class="container sec">
+    <div class="row">
+    <h2>Stanford Honor Code</h2>
+    <div id="honorcodedesc">
+        Students are free to form study groups and may discuss
+    homeworks, projects, and assignments in groups. However, for
+    homeworks, each student must write down
+        the solutions and code from scratch independently, without referring to any written notes from the joint
+        session. In other words, each student must understand the solution well enough in order to reconstruct it by
+        themselves. It is an honor code violation to copy, refer to, or look at written or code solutions from a
+        previous year or any other source, including but not limited to: official solutions from a previous year, solutions posted online,
+        and solutions you or someone else may have written up in a
+    previous year, or from any other source. Furthermore, it is an honor code
+        violation to post your assignment solutions online, such as on
+    a public git repo. You must explicitly cite any external content, research,
+    code or other resources you use for your homeworks, analyses or projects. The Stanford Honor Code can be
+        found <a href="https://communitystandards.stanford.edu/policies-and-guidance/honor-code">here</a>. The Stanford
+        Honor Code pertaining to CS courses can be found
+        <a href="https://web.stanford.edu/class/archive/cs/cs106b/cs106b.1164/handouts/honor-code.pdf">here</a>.
+        <br>
+    </div>
+    <h2>AI Tool Policy </h2>
+    <div id="aitoolpolicy">
+    You may use generative AI tools such as Co-Pilot and ChatGPT as you would use a human collaborator. Soliciting direct answers or duplicating responses from these tools is not allowed. Any interactions with these tools must be credited as if they were contributions from collaborators. Using generative AI tools to essentially complete any part of an assignment or project is forbidden and will be considered a breach of the honor code. For additional information, see Generative AI Policy Guidance <a href="https://communitystandards.stanford.edu/generative-ai-policy-guidance">here</a>.
+<br> <br> When submitting your assignment to Gradescope, you must attach any chat transcript directly related to your assignment. We will be tolerant for actions taken in good faith. You can either add screenshots of the transcripts at the end of your submission, or attach a separate pdf file. We may later adjust the policy should we find the AI tool usage undermines the educational value.
+</div>
+<h2> Lecture Attendance </h2>
+    <div id="attendance">
+        We require in-person lecture attendance.
+        Specifically, the two socio-technical analyses dates will include in-class
+        projects. More broadly, class participation and in-class discussions will count toward the final grade.
+    </div>
+</div>
+<hr/>
+
+
+<div class="container sec">
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Time & Location</h2>
+            <span class="spanh">Spring Quarter</span>: March 31 - June 4, 2025<br>
+            <span class="spanh">Lecture</span>: Monday, Wednesday 1:30 - 2:50 PM<br>
+            <span class="spanh">Location</span>:
+            <br>
+            <ul>
+                <li><span class="spanh">Lectures</span>:
+                    <a href="https://campus-map.stanford.edu/?srch=Hewlett+Teaching+Center+102"> Hewlett Teaching Center 102</a>
+                </li>
+            </ul>
+
+            <h2> Contact </h2>
+            Course staff can be reached through Ed. For personal correspondance, please send a private message on Ed.
+        </div>
+        <div class="col-md-4">
+            <h2>Grade Breakdown</h2>
+            <ul>
+                <li><span class="spanh">Three Homeworks:</span> 13% each, total 33%</li>
+                <li><span class="spanh">Two In-class Socio-Tech Analyses:</span> 6% each, total 12%</li>
+                <ul>
+                    <li><span class="spanh">In-class activities:</span> 50%</li>
+                    <li><span class="spanh">1-page summary:</span> 50%</li>
+                </ul>
+                <li><span class="spanh">Exploratory Project:</span> 15%</li>
+                <li><span class="spanh">Final Project:</span> 35%</li>
+                <ul>
+                    <li><span class="spanh">Proposal:</span> 10%</li>
+                    <li><span class="spanh">Progress Report:</span> 20%</li>
+                    <li><span class="spanh">Poster Presentation:</span> 20%</li>
+                    <li><span class="spanh">Final Report:</span> 50%</li>
+                </ul>
+                <li><span class="spanh">Participation:</span> 5%</li>
+            </ul>
+        </div>
+        <div class="col-md-4">
+      <h2>Grading Policy</h2>
+      <p>Letter grades in this course will be assigned according to the predetermined scale below. Plus/minus grades will be based on a curve within the scale. Grades below C will be assigned based on standard practices.  </p>
+            <ul>
+                <li><span class="spanh">A:</span> [90%,100%]</li>
+                <li><span class="spanh">B:</span> [80%,90%)</li>
+                <li><span class="spanh">C:</span> [70%,80%)</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<hr/>
+
+<div class="container sec">
+    <h2>FAQ</h2>
+    <div class="qqa">
+        <div class="qq">What are the pre-requisites?</div>
+        <ul>
+            <li>
+                <div class="qa">
+                    Basic knowledge about machine learning from at
+    least one of CS 221, 228, 229 or 230, or equivalent experience. 
+                </div>
+            </li>
+            <li>
+                <div class="qa">
+                    Proficiency in a programming language: preferably Python.
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="qqa">
+        <div class="qq">Can I audit or sit in?</div>
+        <div class="qa">A significant component of this course is in-class
+            participation and activities. In general, we are very open to sitting-in guests
+            if you are a member of the Stanford community (registered student,
+            staff, and/or faculty), but the primary participants will be
+            registered students. Out of courtesy, we would appreciate that you
+            first email us or talk to the instructor after the first class you
+            attend. If the class is too full and we're running out of
+            space, we would ask that you please allow registered students to attend.
+        </div>
+    </div>
+    <div class="qqa">
+        <div class="qq">Is there a textbook for this course?</div>
+        <div class="qa">While there is no required textbook, we offer a recommended reading list <a
+                href="https://docs.google.com/document/d/1chFYAnSWxD6CvsxO7PakadUt2WN4Ef_wiEsaCmXEEEY/edit?usp=sharing">here</a>
+            for this course.
+        </div>
+    </div>
+</div>
+
+<div class="container sec">
+    <h2>Academic Accomodations</h2>
+    <div id="accomdationdesc">
+        If you need an academic accommodation based on a disability, please register with the Office of Accessible
+        Education (OAE). Professional staff will evaluate your needs, support appropriate and reasonable accommodations,
+        and prepare an Academic Accommodation Letter for faculty. To get started, or to re-initiate services, please
+        visit oae.stanford.edu.
+        <br>
+        <br>
+        If you already have an Academic Accommodation Letter, please make a private Ed post. OAE Letters should be sent
+        to us at the earliest possible opportunity so that the course staff can partner with you and OAE to make the
+        appropriate accommodations.
+    </div>
+</div>
+
+<hr/>
+<div class="container sec">
+    <strong>Acknowledgments.</strong> HTML taken from various CS courses given at Stanford: <a
+        href="http://cs231n.stanford.edu/">cs231n</a>, <a href="http://web.stanford.edu/class/cs231a/">cs231a</a>, and
+    <a href="http://cs229.stanford.edu/">cs229</a>.
+</div>
+
+<!-- jQuery and Boostrap -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
