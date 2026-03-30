@@ -71,9 +71,11 @@ h2 {
   object-position: center center;
   display: block;
 }
-/* saba.jpg: focal point — tune until face matches other portraits (higher X = shift view right; lower Y = shift view up) */
+/* saba.jpg: focal point + zoom — increase scale() to zoom in more; match %s to object-position */
 .instructorphoto-saba img {
   object-position: 70% 18%;
+  transform: scale(1.15);
+  transform-origin: 70% 18%;
 }
 .instructor {
   display: inline-block;
