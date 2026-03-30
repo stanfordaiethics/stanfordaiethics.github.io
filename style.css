@@ -73,7 +73,7 @@ h2 {
 }
 /* saba.jpg: focal point — tune until face matches other portraits (higher X = shift view right; lower Y = shift view up) */
 .instructorphoto-saba img {
-  object-position: 78% 18%;
+  object-position: 70% 18%;
 }
 .instructor {
   display: inline-block;
