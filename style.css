@@ -67,15 +67,17 @@ h2 {
 .instructorphoto img {
   width: 100%;
   height: 100%;
+  max-width: none;
   object-fit: cover;
   object-position: center center;
   display: block;
 }
-/* saba.jpg: focal point + zoom — increase scale() to zoom in more; match %s to object-position */
-.instructorphoto-saba img {
-  object-position: 70% 18%;
-  transform: scale(1.15);
-  transform-origin: 70% 18%;
+/* Saba portrait: ID selector so this always wins; bump ?v= on style.css link after editing */
+#profile-photo-saba {
+  object-fit: cover;
+  object-position: 72% 16%;
+  transform: scale(1.18);
+  transform-origin: 72% 16%;
 }
 .instructor {
   display: inline-block;
