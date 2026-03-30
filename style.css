@@ -71,9 +71,9 @@ h2 {
   object-position: center center;
   display: block;
 }
-/* saba.jpg: focal point — higher % = more right; lower second % = more “up” in frame */
+/* saba.jpg: focal point — tune until face matches other portraits (higher X = shift view right; lower Y = shift view up) */
 .instructorphoto-saba img {
-  object-position: 65% 28%;
+  object-position: 78% 18%;
 }
 .instructor {
   display: inline-block;
@@ -100,6 +100,39 @@ h2 {
 .course-assistants .instructor-name {
   white-space: nowrap;
   display: inline-block;
+}
+
+/* Equal-width columns + office hours on one horizontal line (same baseline) */
+@media (min-width: 992px) {
+  .row.course-assistants {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch;
+  }
+  .row.course-assistants::before,
+  .row.course-assistants::after {
+    display: none;
+  }
+  .row.course-assistants > .col-md-4 {
+    float: none;
+    width: 33.33333333%;
+    flex: 0 0 33.33333333%;
+    max-width: 33.33333333%;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .row.course-assistants .office-hours {
+    margin-top: auto;
+    padding-top: 0.75rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .course-assistants .office-hours {
+    margin-top: 0.75rem;
+  }
 }
 .sec {
   margin-bottom: 10px;
