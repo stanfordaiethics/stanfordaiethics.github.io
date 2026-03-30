@@ -71,6 +71,10 @@ h2 {
   object-position: center center;
   display: block;
 }
+/* saba.jpg: focal point — higher % = more right; lower second % = more “up” in frame */
+.instructorphoto-saba img {
+  object-position: 65% 28%;
+}
 .instructor {
   display: inline-block;
   width: 140px;
@@ -84,12 +88,18 @@ h2 {
   margin-left: auto;
   margin-right: auto;
   display: block;
+  width: auto;
+  max-width: 100%;
 }
 .course-assistants .office-hours {
   text-align: center;
   width: 100%;
   padding: 0 8px;
   box-sizing: border-box;
+}
+.course-assistants .instructor-name {
+  white-space: nowrap;
+  display: inline-block;
 }
 .sec {
   margin-bottom: 10px;
