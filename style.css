@@ -128,8 +128,10 @@ h2 {
     align-items: center;
   }
   .row.course-assistants .office-hours {
-    margin-top: auto;
     padding-top: 0.75rem;
+    /* Same min-height so detail area matches; do not use margin-top:auto here or
+       taller office-hours blocks sit higher and misalign the bold headings. */
+    min-height: 5.5em;
   }
 }
 
